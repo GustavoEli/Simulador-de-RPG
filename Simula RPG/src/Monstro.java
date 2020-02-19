@@ -1,10 +1,11 @@
 public class Monstro implements Action{
     
     int vida;
-    String nome;
+    int atk;
     
-    public void Monstro(){
-    
+    public Monstro(int vida, int atk){
+        this.vida = vida;
+        this.atk = atk;
     }
     
     @Override

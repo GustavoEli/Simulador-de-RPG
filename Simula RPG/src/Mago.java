@@ -4,4 +4,13 @@ public class Mago extends Humanoide{
         super(vida, xp);
     }
     
+    @Override
+    public boolean atacar(){
+        return false;
+    }
+    
+    @Override
+    public boolean defender(){
+        return false;
+    }
 }
