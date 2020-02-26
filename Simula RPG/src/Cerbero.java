@@ -1,7 +1,9 @@
 public class Cerbero extends Monstro implements Action{
 
-    public Cerbero(int vida, int atk) {
-        super(vida, atk);
+    public Cerbero(/*int vida, int atk*/) {
+        //super(vida, atk);
+        vida = 100;
+        atk = 10;
     }
     
     @Override
@@ -12,5 +14,9 @@ public class Cerbero extends Monstro implements Action{
     @Override
     public boolean defender(){
         return false;
+    }
+    
+    public int getVida(){
+        return vida;
     }
 }

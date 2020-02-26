@@ -1,10 +1,13 @@
 public class Mago extends Humanoide implements Action{
 
     public Mago(/*int vida, int xp*/) {
-        //super(vida, xp);
+
+    //definindo os atributos herdados de humanoide para essa classe
         vida = 100;
         atk = 10;
         xp = 0;
+        
+    //super(vida, xp);
     }
     
     @Override
@@ -15,5 +18,11 @@ public class Mago extends Humanoide implements Action{
     @Override
     public boolean defender(){
         return false;
+    }
+    
+    //Função que retorna o valor da vida
+    //usada para ser testada na simulação
+    public int getVida(){
+        return vida;
     }
 }

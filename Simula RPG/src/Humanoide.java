@@ -1,9 +1,9 @@
 public class Humanoide implements Action{
     
     int vida;
-    int xp;
     int atk;
-    boolean def;
+    int def;
+    int xp;
     
     public Humanoide(/*int vida, int xp*/){
         //this.vida = vida;
@@ -16,5 +16,11 @@ public class Humanoide implements Action{
     
     public boolean defender(){
         return false;
+    }
+    
+    //Função que retorna o valor da vida
+    //usada para ser testada na simulação
+    public int getVida(){
+        return vida;
     }
 }
