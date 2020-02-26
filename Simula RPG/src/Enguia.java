@@ -1,4 +1,4 @@
-public class Enguia extends Monstro{
+public class Enguia extends Monstro implements Action{
 
     public Enguia(int vida, int atk) {
         super(vida, atk);

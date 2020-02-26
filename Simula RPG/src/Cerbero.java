@@ -1,4 +1,4 @@
-public class Cerbero extends Monstro{
+public class Cerbero extends Monstro implements Action{
 
     public Cerbero(int vida, int atk) {
         super(vida, atk);
