@@ -47,7 +47,7 @@ public class Guerreiro extends Humanoide implements Action{
     }
 
     public void causarDano(Monstro monstro){
-        
+       monstro.vida = monstro.vida - this.atk; 
     }
     
     //Função que retorna o valor da vida

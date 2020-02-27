@@ -1,3 +1,6 @@
+
+import java.util.Random;
+
 public class Humanoide implements Action{
     
     int vida;
@@ -10,10 +13,12 @@ public class Humanoide implements Action{
         //this.xp = xp;
     }
     
+    @Override
     public boolean atacar(){
         return false;
     }
     
+    @Override
     public boolean defender(){
         return false;
     }
