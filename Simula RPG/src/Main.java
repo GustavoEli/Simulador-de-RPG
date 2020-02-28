@@ -4,11 +4,11 @@ public class Main {
         
         Guerreiro guer = new Guerreiro();
         
-        if(guer.atacar()){
+        /*if(guer.atacar()){
             System.out.println("é positivo");
         }else{
             System.out.println("é negativo");
-        }
+        }*/
         
         batalhaSim bt = new batalhaSim();
         bt.inicio();

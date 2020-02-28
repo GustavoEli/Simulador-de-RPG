@@ -1,9 +1,7 @@
-
-import java.util.Random;
-
 public class Humanoide implements Action{
     
     int vida;
+    String nome;
     int atk;
     int def;
     int xp;
@@ -13,7 +11,15 @@ public class Humanoide implements Action{
         //this.xp = xp;
     }
     
-    @Override
+    public void atacar(Humanoide humanos) {}
+    
+    public void atacar(Monstro criatura) {}
+    
+    public void defender(Humanoide humanos){}
+    
+    public void defender(Monstro criatura) {}
+    
+    /*@Override
     public boolean atacar(){
         return false;
     }
@@ -27,5 +33,5 @@ public class Humanoide implements Action{
     //usada para ser testada na simulação
     public int getVida(){
         return vida;
-    }
+    }*/
 }

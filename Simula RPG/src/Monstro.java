@@ -1,23 +1,22 @@
 public class Monstro implements Action{
     
     int vida;
+    String nome;
     int atk;
     
-    public Monstro(/*int vida, int atk*/){
+    public Monstro(){
         
     }
     
-    @Override
-    public boolean atacar(){
-        return false;
-    }
+    public void atacar(Humanoide humanos){}
     
-    @Override
-    public boolean defender(){
-        return false;
-    }
+    public void atacar(Monstro criatura){}
     
-    public int getVida(){
+    public void defender(Humanoide humanos){}
+    
+    public void defender(Monstro criatura){}
+    
+    /*public int getVida(){
         return vida;
-    }
+    }*/
 }

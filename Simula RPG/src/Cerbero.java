@@ -1,16 +1,30 @@
-import java.util.Random;
-
 public class Cerbero extends Monstro implements Action{
 
-    public Cerbero(/*int vida, int atk*/) {
-        //super(vida, atk);
+    public Cerbero() {
         vida = 100;
+        nome = "Cerbero";
         atk = 10;
     }
     
-   @Override
+    public void atacar(Humanoide humano){
+        humano.vida = humano.vida - this.atk;
+    }
+
+    public void atacar(Monstro monstro){
+       monstro.vida = monstro.vida - this.atk; 
+    }
+    
+    public void defender(Humanoide humano){
+    
+    }
+    
+    public void defender(Monstro monstro){
+    
+    }
+    
+       /*@Override
     public boolean atacar(){
-        
+    
        Random rand = new Random();
        
         if(rand.nextBoolean()){
@@ -34,19 +48,7 @@ public class Cerbero extends Monstro implements Action{
         }
     }
     
-    //Sobrecarga de metodos
-    //em vez de criar uma função de causar dano humano e causar dano monstro
-    //eu faço uma mesma função, causar dano, e so mudo os parametros para ver quem causara
-    //por exemplo desenhar bola, se ver existe varios parametros diferentes para uma mesma função
-    public void causarDano(Humanoide humano){
-        humano.vida = humano.vida - this.atk;
-    }
-
-    public void causarDano(Monstro monstro){
-       monstro.vida = monstro.vida - this.atk; 
-    }
-    
     public int getVida(){
         return vida;
-    }
+    }*/
 }
